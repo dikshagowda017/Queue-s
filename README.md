@@ -1,40 +1,42 @@
-# 📚 Stack Using Linked List in Java
+# 📚 Queue Using Linked List in Java
 
 ## 📖 Overview
 
-This project demonstrates the implementation of a **Stack** using a **Singly Linked List** in Java without using Java's built-in `Stack` class.
+This project demonstrates the implementation of a **Queue** using a **Singly Linked List** in Java without using Java's built-in `Queue` class.
 
-The stack follows the **LIFO (Last In, First Out)** principle, where the last inserted element is the first one to be removed.
+The queue follows the **FIFO (First In, First Out)** principle, where the first inserted element is the first one to be removed.
 
 ---
 
 ## 🚀 Features
 
-- Push an element onto the stack
-- Pop the top element
-- Display all stack elements
-- Check whether the stack is empty
-- Maintain stack size
+- Enqueue (Insert)
+- Dequeue (Delete)
+- Peek (Front Element)
+- Display Queue
+- Check if Queue is Empty
+- Maintain Queue Size
 
 ---
 
 ## 🧠 Concepts Used
 
 - Singly Linked List
-- Stack Data Structure
+- Queue Data Structure
 - Object-Oriented Programming (OOP)
 - Dynamic Memory Allocation
 - Node Traversal
+- FIFO (First In, First Out)
 
 ---
 
 ## 📂 Project Structure
 
 ```
-StackUsingLinkedList/
+QueueUsingLinkedList/
 │── Main.java
 │── Node Class
-│── Stack Class
+│── Queue Class
 └── README.md
 ```
 
@@ -44,37 +46,32 @@ StackUsingLinkedList/
 
 | Operation | Description | Time Complexity |
 |-----------|-------------|-----------------|
-| Push | Inserts an element at the top | O(1) |
-| Pop | Removes the top element | O(1) |
-| Display | Prints all elements | O(n) |
-| isEmpty | Checks whether the stack is empty | O(1) |
+| Enqueue | Inserts an element at the rear | O(1) |
+| Dequeue | Removes the front element | O(1) |
+| Peek | Returns the front element | O(1) |
+| Display | Prints all queue elements | O(n) |
+| isEmpty | Checks if the queue is empty | O(1) |
 
 ---
 
-## 📌 Stack Representation
+## 📌 Queue Representation
+
+### Initial Queue
 
 ```
-Top
- ↓
-30
- ↓
-20
- ↓
-10
- ↓
-NULL
+Front                Rear
+  |                    |
+  v                    v
+10 → 20 → 30 → 40 → NULL
 ```
 
-After `Pop()`:
+### After Dequeue()
 
 ```
-Top
- ↓
-20
- ↓
-10
- ↓
-NULL
+Front          Rear
+  |              |
+  v              v
+20 → 30 → 40 → NULL
 ```
 
 ---
@@ -85,6 +82,7 @@ NULL
 10
 20
 30
+40
 -1
 ```
 
@@ -93,14 +91,18 @@ NULL
 ## 📤 Sample Output
 
 ```
+Queue:
+10
+20
 30
-20
-10
+40
 
-Popped data is : 30
+Dequeued Element: 10
 
+Queue after Dequeue:
 20
-10
+30
+40
 ```
 
 ---
@@ -116,21 +118,34 @@ Popped data is : 30
 
 ## 🎯 Learning Outcomes
 
-- Understand the working of the **Stack** data structure.
-- Learn how stacks can be implemented using a linked list.
-- Practice pointer manipulation using nodes.
-- Understand LIFO (Last In, First Out) operations.
+- Understand the Queue data structure.
+- Learn Queue implementation using a Linked List.
+- Understand FIFO (First In, First Out) operations.
+- Practice linked list pointer manipulation.
 - Strengthen Java and Data Structures fundamentals.
+
+---
+
+## 🌍 Real-World Applications
+
+- CPU Scheduling
+- Printer Queue Management
+- Ticket Booking Systems
+- Banking Queue Systems
+- Call Center Management
+- Breadth First Search (BFS)
+- Network Packet Scheduling
 
 ---
 
 ## ⭐ Future Enhancements
 
-- Peek operation
-- Stack size method
-- Menu-driven implementation
-- Generic Stack implementation
-- Exception handling
+- Circular Queue
+- Queue using Arrays
+- Double Ended Queue (Deque)
+- Priority Queue
+- Generic Queue Implementation
+- Exception Handling
 
 ---
 
@@ -138,9 +153,9 @@ Popped data is : 30
 
 **Diksha Gowda**
 
-- GitHub: https://github.com/dikshagowda017
-- LeetCode: https://leetcode.com/u/diksha_gowda_017/
+- 🔗 GitHub: https://github.com/dikshagowda017
+- 💻 LeetCode: https://leetcode.com/u/diksha_gowda_017/
 
 ---
 
-⭐ If you found this project helpful, consider giving it a star!
+⭐ If you found this project helpful, consider giving it a **Star** on GitHub!
